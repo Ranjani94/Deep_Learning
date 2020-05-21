@@ -13,9 +13,15 @@ tensorflow
 ### Enter directory
 
 $ cd pytorch-cifar100
+
 $ pip install tensorboardX
+
 $ mkdir runs
-Run tensorboard
+
+### Run tensorboard
+
 $ tensorboard --logdir='runs' --port=6006 --host='localhost'
+
 $ python train.py -net vgg16
+
 $ python test.py -net vgg16 -weights path_to_vgg16_weights_file
